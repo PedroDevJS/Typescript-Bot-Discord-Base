@@ -1,0 +1,23 @@
+{
+	"Slash Command": {
+		"prefix": "new.command",
+		"scope": "typescript",
+		"body": [
+			"import { ApplicationCommandType } from 'discord.js';",
+			"import Command from '#command';",
+			"",
+			"const command: Command = {",
+			"    name: '',",
+			"    description: '',",
+			"    type: ApplicationCommandType.ChatInput,",
+			"    options: [],",
+			"    run: (interaction, client) => {",
+			"        ",
+			"    },",
+			"};",
+			"",
+			"export default command;"
+		],
+		"description": "Create a new Slash Command"
+	}
+}

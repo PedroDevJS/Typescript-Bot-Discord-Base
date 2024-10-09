@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": false, // Desabilitar erro de variáveis não utilizadas
+    "noUnusedParameters": false, // Desabilitar erro de parâmetros não utilizados
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "#event": [
+        "src/discord/base/Event.ts"
+      ],
+      "#fx/*": [
+        "src/functions/*"
+      ],
+      "#command": [
+        "src/discord/base/Command.ts"
+      ],
+      "#bot": [
+        "src/discord/client/bot.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
